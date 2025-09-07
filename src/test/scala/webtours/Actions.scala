@@ -112,6 +112,5 @@ object Actions {
     .post("/cgi-bin/reservations.pl")
     .formParam("Book Another.x", "42")
     .formParam("Book Another.y", "10")
-    .check(bodyString.saveAs("BODY"))
     .check(status is 200)
 }

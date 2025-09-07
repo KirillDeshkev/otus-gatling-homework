@@ -31,8 +31,4 @@ class Scenario {
     .exec(Actions.selectFlight)
     .exec(Actions.purchase)
     .exec(Actions.goBack)
-    .exec { session =>
-      println(session("BODY").as[String])
-      session
-    }
 }
